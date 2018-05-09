@@ -25,5 +25,11 @@ public class SolrTest {
         server.commit();
     }
 
+    @Test
+    public void delete(){
+        HttpSolrServer server = new HttpSolrServer("http://localhost:8080/solr");
+        server.delete(1);
+        server.commit();
+    }
 
 }
