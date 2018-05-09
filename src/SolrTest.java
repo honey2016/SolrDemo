@@ -30,6 +30,9 @@ public class SolrTest {
         HttpSolrServer server = new HttpSolrServer("http://localhost:8080/solr");
         server.deleteById("1");
         server.commit();
+
+
+
     }
 
 }
