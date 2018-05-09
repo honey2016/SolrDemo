@@ -26,9 +26,9 @@ public class SolrTest {
     }
 
     @Test
-    public void delete(){
+    public void delete() throws IOException, SolrServerException {
         HttpSolrServer server = new HttpSolrServer("http://localhost:8080/solr");
-        server.delete(1);
+        server.deleteById("1");
         server.commit();
     }
 
